@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html class="light" lang="ka">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>MEP საინჟინრო კომპანია - პორტფოლიო</title>
+
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+
+  <!-- Fonts & Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+
+  <!-- Tailwind Config (same scale as your first page) -->
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#1193d4",
+            "background-light": "#f6f7f8",
+            "background-dark": "#101c22",
+          },
+          fontFamily: {
+            "display": ["Inter", "sans-serif"]
+          },
+          borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+        },
+      },
+    }
+  </script>
+
+  <style>
+    .group:hover .group-hover\:translate-y-\[-100\%\] {
+    transform: translateY(-100%);
+  }
+    .material-symbols-outlined {
+      font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24
+    }
+  </style>
+</head>
+<body class="font-display bg-background-light dark:bg-background-dark text-slate-900 dark:text-background-light">
+<div class="relative flex min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+  <div class="layout-container flex h-full grow flex-col">
+
+    <!-- Header with logo (sizes matched to your home page) -->
+    <header class="sticky top-0 z-50 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm border-b border-gray-200 dark:border-gray-800">
+<div class="container mx-auto px-4">
+<div class="flex items-center justify-between whitespace-nowrap h-16">
+<div class="flex items-center gap-4 text-[#111618] dark:text-white">
+<div class="text-primary"><a href="index.html">
+ <img src="IMG/logo/Detra_logo.png" alt="Detra logo" class="h-10 w-auto"></a>
+</div>
+<!-- <h2 class="text-lg font-bold tracking-[-0.015em]">MEP Engineering Co.</h2> -->
+</div>
+<div class="hidden md:flex flex-1 justify-end gap-8">
+<div class="flex items-center gap-9 text-sm font-medium">
+<a class="text-[#111618] dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors" href="index.html">მთავარი</a>
+<a class="text-[#111618] dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors" href="about.html">ჩვენს შესახებ</a>
+<a class="text-[#111618] dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors" href="service.html">სერვისები</a>
+<a class="text-primary font-bold" href="project.html">პროექტები</a>
+<a class="text-[#111618] dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors" href="vacancies.html">კარიერა</a>
+<a class="text-[#111618] dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors" href="contact.html">კონტაქტი</a>
+</div>
+</div>
+</div>
+</div>
+</header>
+
+    <!-- Main (same container widths & rhythm) -->
+    <main class="flex flex-1 justify-center px-4 sm:px-8 py-10 md:py-16">
+      <div class="layout-content-container flex flex-col w-full max-w-7xl flex-1 gap-8">
+
+        <!-- Page Heading -->
+        <div class="flex flex-wrap justify-between gap-4 items-center">
+          <div class="flex flex-col gap-3">
+            <h1 class="text-4xl @[480px]:text-5xl font-black leading-tight tracking-[-0.033em] text-slate-900 dark:text-white">ჩვენი პროექტები</h1>
+            <p class="text-slate-600 dark:text-gray-400 text-base @[480px]:text-lg leading-normal max-w-2xl">
+              გაეცანით ჩვენს მრავალფეროვან, წარმატებით განხორციელებულ MEP პროექტებს — ინოვაცია, მდგრადობა და სრულყოფილებაზე ორიენტაცია სხვადასხვა სექტორში.
+            </p>
+          </div>
+        </div>
+
+        <!-- Filter Chips -->
+        <div class="flex gap-2 sm:gap-3 p-1 flex-wrap">
+          <button class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-full px-4 sm:px-5 bg-primary text-white transition-colors">
+            <p class="text-sm font-medium leading-normal">ყველა</p>
+          </button>
+          <button class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-full px-4 sm:px-5 bg-slate-200 dark:bg-gray-800 text-slate-700 dark:text-gray-300 hover:bg-primary/20 dark:hover:bg-primary/30 transition-colors">
+            <p class="text-sm font-medium leading-normal">კომერციული</p>
+          </button>
+          <button class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-full px-4 sm:px-5 bg-slate-200 dark:bg-gray-800 text-slate-700 dark:text-gray-300 hover:bg-primary/20 dark:hover:bg-primary/30 transition-colors">
+            <p class="text-sm font-medium leading-normal">საცხოვრებელი</p>
+          </button>
+          <button class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-full px-4 sm:px-5 bg-slate-200 dark:bg-gray-800 text-slate-700 dark:text-gray-300 hover:bg-primary/20 dark:hover:bg-primary/30 transition-colors">
+            <p class="text-sm font-medium leading-normal">ინდუსტრიული</p>
+          </button>
+          <button class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-full px-4 sm:px-5 bg-slate-200 dark:bg-gray-800 text-slate-700 dark:text-gray-300 hover:bg-primary/20 dark:hover:bg-primary/30 transition-colors">
+            <p class="text-sm font-medium leading-normal">ჯანდაცვა</p>
+          </button>
+          <button class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-full px-4 sm:px-5 bg-slate-200 dark:bg-gray-800 text-slate-700 dark:text-gray-300 hover:bg-primary/20 dark:hover:bg-primary/30 transition-colors">
+            <p class="text-sm font-medium leading-normal">საგანმანათლებლო</p>
+          </button>
+        </div>
+
+        <!-- Project Grid -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+
+          <!-- Card 1 -->
+          <div class="flex flex-col bg-white dark:bg-background-dark rounded-xl overflow-hidden border border-slate-200 dark:border-slate-800 shadow-sm hover:shadow-2xl dark:hover:shadow-primary/20 transition-all duration-300 ease-in-out transform hover:-translate-y-1 group">
+            <div class="relative overflow-hidden">
+              <div class="w-full bg-center bg-no-repeat aspect-video bg-cover transition-transform duration-500 ease-in-out group-hover:scale-105" data-alt="Apex Business Center - თანამედროვე მინის ფასადი" style='background-image: url("img/projects/bclogo.png");'></div>
+            </div>
+            <div class="p-5 flex flex-col flex-grow">
+              <p class="text-slate-600 dark:text-gray-400 text-xs font-medium uppercase tracking-wider">კომერციული</p>
+              <p class="text-slate-900 dark:text-white text-xl font-bold leading-normal my-2">თი ბი სი ბანკის ახალი ფილიალი</p>
+              <p class="text-slate-600 dark:text-gray-400 text-sm leading-normal flex-grow mb-4">მის: ხიზანიშვილის ქუჩა</p>
+              <p class="text-slate-600 dark:text-gray-400 text-sm leading-normal flex-grow mb-4">შესრულებული სამუშაო: HVAC</p>
+              <p class="text-slate-600 dark:text-gray-400 text-sm leading-normal flex-grow mb-4">სტატუსი: დასრულებული</p>
+              <a class="inline-flex items-center gap-2 text-sm font-bold text-primary group mt-auto" href="#">
+                პროექტის ნახვა
+                <span class="material-symbols-outlined transition-transform duration-300 group-hover:translate-x-1">arrow_forward</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="flex flex-col bg-white dark:bg-background-dark rounded-xl overflow-hidden border border-slate-200 dark:border-slate-800 shadow-sm hover:shadow-2xl dark:hover:shadow-primary/20 transition-all duration-300 ease-in-out transform hover:-translate-y-1 group">
+            <div class="relative overflow-hidden">
+              <div class="w-full bg-center bg-no-repeat aspect-video bg-cover transition-transform duration-500 ease-in-out group-hover:scale-105" data-alt="The Urban Residences - თანამედროვე საცხოვრებელი" style='background-image: url("img/projects/deko.png");'></div>
+            </div>
+            <div class="p-5 flex flex-col flex-grow">
+              <p class="text-slate-600 dark:text-gray-400 text-xs font-medium uppercase tracking-wider">კომერციული</p>
+              <p class="text-slate-900 dark:text-white text-xl font-bold leading-normal my-2">სასტუმრო კომპლექსი</p>
+              <p class="text-slate-600 dark:text-gray-400 text-sm leading-normal flex-grow mb-4">მის: მცხეთა, არსუკიძის ქუჩა</p>
+              <p class="text-slate-600 dark:text-gray-400 text-sm leading-normal flex-grow mb-4">შესრულებული სამუშაო: HVAC, წყალმომარაგება, კანალიზაცია</p>
+              <p class="text-slate-600 dark:text-gray-400 text-sm leading-normal flex-grow mb-4">სტატუსი: დასრულებული</p>
+              <a class="inline-flex items-center gap-2 text-sm font-bold text-primary group mt-auto" href="#">
+                პროექტის ნახვა
+                <span class="material-symbols-outlined transition-transform duration-300 group-hover:translate-x-1">arrow_forward</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="flex flex-col bg-white dark:bg-background-dark rounded-xl overflow-hidden border border-slate-200 dark:border-slate-800 shadow-sm hover:shadow-2xl dark:hover:shadow-primary/20 transition-all duration-300 ease-in-out transform hover:-translate-y-1 group">
+            <div class="relative overflow-hidden">
+              <div class="w-full bg-center bg-no-repeat aspect-video bg-cover transition-transform duration-500 ease-in-out group-hover:scale-105" data-alt="Innovate Industrial Park - ინდუსტრიული პარკი" style='background-image: url("img/projects/bclogo.png");'></div>
+            </div>
+            <div class="p-5 flex flex-col flex-grow">
+              <p class="text-slate-600 dark:text-gray-400 text-xs font-medium uppercase tracking-wider">კომერციული</p>
+              <p class="text-slate-900 dark:text-white text-xl font-bold leading-normal my-2">თი ბი სი ბანკის ახალი ფილიალი</p>
+              <p class="text-slate-600 dark:text-gray-400 text-sm leading-normal flex-grow mb-4">მის: ბათუმი, სელიმ ხიმშიაშვილის ქუჩა</p>
+              <p class="text-slate-600 dark:text-gray-400 text-sm leading-normal flex-grow mb-4">შესრულებული სამუშაო: HVAC</p>
+              <p class="text-slate-600 dark:text-gray-400 text-sm leading-normal flex-grow mb-4">სტატუსი: დასრულებული</p>
+              <a class="inline-flex items-center gap-2 text-sm font-bold text-primary group mt-auto" href="#">
+                პროექტის ნახვა
+                <span class="material-symbols-outlined transition-transform duration-300 group-hover:translate-x-1">arrow_forward</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="flex flex-col bg-white dark:bg-background-dark rounded-xl overflow-hidden border border-slate-200 dark:border-slate-800 shadow-sm hover:shadow-2xl dark:hover:shadow-primary/20 transition-all duration-300 ease-in-out transform hover:-translate-y-1 group">
+            <div class="relative overflow-hidden">
+              <div class="w-full bg-center bg-no-repeat aspect-video bg-cover transition-transform duration-500 ease-in-out group-hover:scale-105" data-alt="St. Jude's Medical Center - საავადმყოფო" style='background-image: url("img/projects/bclogo.png");'></div>
+            </div>
+            <div class="p-5 flex flex-col flex-grow">
+              <p class="text-slate-600 dark:text-gray-400 text-xs font-medium uppercase tracking-wider">კომერციული</p>
+              <p class="text-slate-900 dark:text-white text-xl font-bold leading-normal my-2">თი ბი სი ბანკის ახალი ფილიალი</p>
+              <p class="text-slate-600 dark:text-gray-400 text-sm leading-normal flex-grow mb-4">მის: თბილისი, აღმაშენებლის ქუჩა</p>
+              <p class="text-slate-600 dark:text-gray-400 text-sm leading-normal flex-grow mb-4">შესრულებული სამუშაო: HVAC</p>
+              <p class="text-slate-600 dark:text-gray-400 text-sm leading-normal flex-grow mb-4">სტატუსი: დასრულებული</p>
+              <a class="inline-flex items-center gap-2 text-sm font-bold text-primary group mt-auto" href="#">
+                პროექტის ნახვა
+                <span class="material-symbols-outlined transition-transform duration-300 group-hover:translate-x-1">arrow_forward</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Card 5 -->
+          <div class="flex flex-col bg-white dark:bg-background-dark rounded-xl overflow-hidden border border-slate-200 dark:border-slate-800 shadow-sm hover:shadow-2xl dark:hover:shadow-primary/20 transition-all duration-300 ease-in-out transform hover:-translate-y-1 group">
+            <div class="relative overflow-hidden">
+              <div class="w-full bg-center bg-no-repeat aspect-video bg-cover transition-transform duration-500 ease-in-out group-hover:scale-105" data-alt="Northwood University Tech Hall - უნივერსიტეტი" style='background-image: url("img/projects/bclogo.png");'></div>
+            </div>
+            <div class="p-5 flex flex-col flex-grow">
+              <p class="text-slate-600 dark:text-gray-400 text-xs font-medium uppercase tracking-wider">კომერციული</p>
+              <p class="text-slate-900 dark:text-white text-xl font-bold leading-normal my-2">თი ბი სი ბანკის ახალი ფილიალი</p>
+              <p class="text-slate-600 dark:text-gray-400 text-sm leading-normal flex-grow mb-4">მის: თბილისი, დადიანი ქუჩა</p>
+              <p class="text-slate-600 dark:text-gray-400 text-sm leading-normal flex-grow mb-4">შესრულებული სამუშაო: HVAC</p>
+              <p class="text-slate-600 dark:text-gray-400 text-sm leading-normal flex-grow mb-4">სტატუსი: დასრულებული</p>
+              <a class="inline-flex items-center gap-2 text-sm font-bold text-primary group mt-auto" href="#">
+                პროექტის ნახვა
+                <span class="material-symbols-outlined transition-transform duration-300 group-hover:translate-x-1">arrow_forward</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Card 6 -->
+          <div class="flex flex-col bg-white dark:bg-background-dark rounded-xl overflow-hidden border border-slate-200 dark:border-slate-800 shadow-sm hover:shadow-2xl dark:hover:shadow-primary/20 transition-all duration-300 ease-in-out transform hover:-translate-y-1 group">
+            <div class="relative overflow-hidden">
+              <div class="w-full bg-center bg-no-repeat aspect-video bg-cover transition-transform duration-500 ease-in-out group-hover:scale-105" data-alt="Metropolis Tower - ცათამბჯენი" style='background-image: url("img/projects/aramex.jpeg");'></div>
+            </div>
+            <div class="p-5 flex flex-col flex-grow">
+              <p class="text-slate-600 dark:text-gray-400 text-xs font-medium uppercase tracking-wider">კომერციული</p>
+              <p class="text-slate-900 dark:text-white text-xl font-bold leading-normal my-2">არამექს ჯორჯიას სათაო ოფისი</p>
+              <p class="text-slate-600 dark:text-gray-400 text-sm leading-normal flex-grow mb-4">მის: თბილისი, ბოჭორმის ქუჩა</p>
+              <p class="text-slate-600 dark:text-gray-400 text-sm leading-normal flex-grow mb-4">შესრულებული სამუშაო: HVAC</p>
+              <p class="text-slate-600 dark:text-gray-400 text-sm leading-normal flex-grow mb-4">სტატუსი: დასრულებული</p>
+              <a class="inline-flex items-center gap-2 text-sm font-bold text-primary group mt-auto" href="#">
+                პროექტის ნახვა
+                <span class="material-symbols-outlined transition-transform duration-300 group-hover:translate-x-1">arrow_forward</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Card 7 -->
+          <div class="flex flex-col bg-white dark:bg-background-dark rounded-xl overflow-hidden border border-slate-200 dark:border-slate-800 shadow-sm hover:shadow-2xl dark:hover:shadow-primary/20 transition-all duration-300 ease-in-out transform hover:-translate-y-1 group">
+            <div class="relative overflow-hidden">
+              <div class="w-full bg-center bg-no-repeat aspect-video bg-cover transition-transform duration-500 ease-in-out group-hover:scale-105" data-alt="Metropolis Tower - ცათამბჯენი" style='background-image: url("img/projects/liberty.png");'></div>
+            </div>
+            <div class="p-5 flex flex-col flex-grow">
+              <p class="text-slate-600 dark:text-gray-400 text-xs font-medium uppercase tracking-wider">კომერციული</p>
+              <p class="text-slate-900 dark:text-white text-xl font-bold leading-normal my-2">ჰოსტელი - CHECK INN</p>
+              <p class="text-slate-600 dark:text-gray-400 text-sm leading-normal flex-grow mb-4">მის: თბილისი, რიყე</p>
+              <p class="text-slate-600 dark:text-gray-400 text-sm leading-normal flex-grow mb-4">შესრულებული სამუშაო: HVAC</p>
+              <p class="text-slate-600 dark:text-gray-400 text-sm leading-normal flex-grow mb-4">სტატუსი: დასრულებული</p>
+              <a class="inline-flex items-center gap-2 text-sm font-bold text-primary group mt-auto" href="#">
+                პროექტის ნახვა
+                <span class="material-symbols-outlined transition-transform duration-300 group-hover:translate-x-1">arrow_forward</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Card 8 -->
+          <div class="flex flex-col bg-white dark:bg-background-dark rounded-xl overflow-hidden border border-slate-200 dark:border-slate-800 shadow-sm hover:shadow-2xl dark:hover:shadow-primary/20 transition-all duration-300 ease-in-out transform hover:-translate-y-1 group">
+            <div class="relative overflow-hidden">
+              <div class="w-full bg-center bg-no-repeat aspect-video bg-cover transition-transform duration-500 ease-in-out group-hover:scale-105" data-alt="Metropolis Tower - ცათამბჯენი" style='background-image: url("img/projects/aramex.jpeg");'></div>
+            </div>
+            <div class="p-5 flex flex-col flex-grow">
+              <p class="text-slate-600 dark:text-gray-400 text-xs font-medium uppercase tracking-wider">კომერციული</p>
+              <p class="text-slate-900 dark:text-white text-xl font-bold leading-normal my-2">არამექს ჯორჯიას სათაო ოფისი</p>
+              <p class="text-slate-600 dark:text-gray-400 text-sm leading-normal flex-grow mb-4">მის: თბილისი, ბოჭორმის ქუჩა</p>
+              <p class="text-slate-600 dark:text-gray-400 text-sm leading-normal flex-grow mb-4">შესრულებული სამუშაო: HVAC</p>
+              <p class="text-slate-600 dark:text-gray-400 text-sm leading-normal flex-grow mb-4">სტატუსი: დასრულებული</p>
+              <a class="inline-flex items-center gap-2 text-sm font-bold text-primary group mt-auto" href="#">
+                პროექტის ნახვა
+                <span class="material-symbols-outlined transition-transform duration-300 group-hover:translate-x-1">arrow_forward</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Card 9 -->
+          <div class="flex flex-col bg-white dark:bg-background-dark rounded-xl overflow-hidden border border-slate-200 dark:border-slate-800 shadow-sm hover:shadow-2xl dark:hover:shadow-primary/20 transition-all duration-300 ease-in-out transform hover:-translate-y-1 group">
+            <div class="relative overflow-hidden">
+              <div class="w-full bg-center bg-no-repeat aspect-video bg-cover transition-transform duration-500 ease-in-out group-hover:scale-105" data-alt="Metropolis Tower - ცათამბჯენი" style='background-image: url("img/projects/aramex.jpeg");'></div>
+            </div>
+            <div class="p-5 flex flex-col flex-grow">
+              <p class="text-slate-600 dark:text-gray-400 text-xs font-medium uppercase tracking-wider">კომერციული</p>
+              <p class="text-slate-900 dark:text-white text-xl font-bold leading-normal my-2">არამექს ჯორჯიას სათაო ოფისი</p>
+              <p class="text-slate-600 dark:text-gray-400 text-sm leading-normal flex-grow mb-4">მის: თბილისი, ბოჭორმის ქუჩა</p>
+              <p class="text-slate-600 dark:text-gray-400 text-sm leading-normal flex-grow mb-4">შესრულებული სამუშაო: HVAC</p>
+              <p class="text-slate-600 dark:text-gray-400 text-sm leading-normal flex-grow mb-4">სტატუსი: დასრულებული</p>
+              <a class="inline-flex items-center gap-2 text-sm font-bold text-primary group mt-auto" href="#">
+                პროექტის ნახვა
+                <span class="material-symbols-outlined transition-transform duration-300 group-hover:translate-x-1">arrow_forward</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Load More -->
+        <!-- <div class="flex pt-8 justify-center">
+          <button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-12 px-8 bg-slate-200 dark:bg-gray-800 text-slate-900 dark:text-white text-base font-bold leading-normal tracking-[0.015em] hover:bg-slate-300 dark:hover:bg-gray-700 transition-colors">
+            <span class="truncate">მეტი პროექტის ჩატვირთვა</span>
+          </button>
+        </div> -->
+
+      </div>
+    </main>
+  </div>
+</div>
+<footer class="flex justify-center bg-slate-900 text-white dark:bg-black px-4 sm:px-8 py-10 md:py-16">
+<div class="w-full max-w-7xl">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+<div class="md:col-span-2">
+<div class="flex items-center gap-4 mb-4">
+<div class="flex items-center gap-4 text-slate-900 dark:text-white">
+<div class="text-primary"><a href="index.html">
+ <img src="IMG/logo/Detra_logo.png" alt="Detra logo" class="h-10 w-auto"></a>
+</div>
+<!-- <h2 class="text-lg font-bold leading-tight tracking-[-0.015em]">MEP Engineering</h2> -->
+</div>
+<!-- <h2 class="text-lg font-bold">MEP Engineering</h2> -->
+</div>
+<!-- <p class="text-sm text-slate-400">Engineering Excellence, Building the Future.</p> -->
+<div class="flex items-center gap-4 mt-6">
+<a aria-label="Facebook" class="text-slate-400 hover:text-white transition-colors" href="#">
+<svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+<path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878V14.89h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"></path>
+</svg>
+</a>
+<a aria-label="YouTube" class="text-slate-400 hover:text-white transition-colors" href="#">
+<svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+<path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"></path>
+</svg>
+</a>
+<a aria-label="LinkedIn" class="text-slate-400 hover:text-white transition-colors" href="#">
+<svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+<path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.557V9h3.562v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.225 0z"></path>
+</svg>
+</a>
+</div>
+</div>
+<div>
+<h4 class="font-bold mb-4">ლინკები</h4>
+<ul class="space-y-2 text-sm text-slate-300">
+<li><a class="hover:text-primary transition-colors" href="service.html">სერვისები</a>
+<li><a class="hover:text-primary transition-colors" href="project.html">პროექტები</a>
+<li><a class="hover:text-primary transition-colors" href="about.html">ჩვენ შესახებ</a>
+<li><a class="hover:text-primary transition-colors" href="contact.html">კონტაქტი</a>
+</ul>
+</div>
+<div>
+<h4 class="font-bold mb-4">დაგვიკავშირდით</h4>
+<ul class="space-y-2 text-sm text-slate-300">
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-base">location_on</span>თბილისი, ნუცუბიძის ქ. 77თ
+                </li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-base">call</span>(555) 123-4567
+                </li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-base">mail</span>contact@mep-eng.com
+                </li>
+</ul>
+</div>
+</div>
+<div class="mt-8 pt-8 border-t border-slate-700 flex flex-col sm:flex-row justify-between items-center text-sm text-slate-500">
+<p>© 2024 Detra. All Rights Reserved.</p>
+<div class="flex space-x-4 mt-4 sm:mt-0">
+<a class="hover:text-primary transition-colors" href="#">Privacy Policy</a>
+<a class="hover:text-primary transition-colors" href="#">Terms of Service</a>
+</div>
+</div>
+</div>
+</footer>
+</body>
+</html>
